@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+    /* overflow-y: hidden; */
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+   display: flex;
+    flex-direction: column;
+}
+
+.main {
+    position: relative; 
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+   overflow-x: hidden;
+   background-image: url(/assests/download.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+/* .darkbox {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.65;
+    z-index: -10; 
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 2; 
+    padding-left: 15vw;
+}
+
+img#logo {
+    width: 200px;
+} */
+
+.headerbtn {
+    display: flex;
+    gap: 1rem; 
+    padding-right: 37PX;
+}
+
+.headertxt {
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 0 30px;
+    z-index: 3;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 3px;
+     */
+     padding-top: 27vh;
+}
+
+.headertxt span {
+    display: block;
+}
+
+.headertxt > :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.headertxt > :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.headertxt > :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.submitbtn {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.submitbtn input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn-red {
+    background-color: #e50914;
+}
+.darkbox {
+    height: 110%;
+    width: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: .8;
+    z-index: 1;  
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 2;  
+    padding-left: 15vw;
+}
+
+img#logo {
+    width: 200px;
+    z-index: 3;  
+    position: relative;
+}
+
+.trending-section{
+    transform: translate(0px, 4vh);
+    z-index: 1;
+    /* height: 70vh; */
+}
+.trending-section {
+    padding: 20px;
+    color: white;
+    overflow-x: scroll;
+    height: auto;
+    background-color: black;
+    height: fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .trending-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 19vw;
+  }
+  
+  .trending-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+  
+  .trending-container {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+  
+  .trending-item {
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .trending-item img {
+    width: 80%;
+    height: auto;
+    display: block;
+    border-radius: 11px;
+  }
+  
+  .trending-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .num{
+    border-color: white;
+    font-size: 92px;
+    transform: translate(0px,-169px);
+    z-index: 10;
+   color: black;
+   text-shadow: 
+   -3px -3px 0 #ffffff,  
+    3px -3px 0 #ffffff,
+   -3px  3px 0 #ffffff,
+   
+    3px  3px 0 #ffffff;
+  }
+  .btn-red:hover{
+    background-color: #cc0812ce;
+    scale: 1.1;
+    transition: linear 1s;
+  }
+  @media (max-width: 768px) {
+    .trending-item {
+      min-width: 150px;
+    }
+  }
+  @media screen and (max-height: 568px) {
+    .headertxt > :nth-child(1) {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+    
+    .headertxt > :nth-child(2) {
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    .headertxt > :nth-child(3) {
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .trending-section{
+        padding-top: 29px;
+    }
+    .img#logo{
+        width: 100px;
+    }
+  }
+
+  
