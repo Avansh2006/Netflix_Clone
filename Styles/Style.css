@@ -7,6 +7,7 @@
     font-family: 'Martel Sans', sans-serif;
     /* overflow-y: hidden; */
     box-sizing: border-box;
+    
 }
 
 body {
@@ -25,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
    overflow-x: hidden;
-   background-image: url(/assests/download.jpeg);
+   background-image: url('../assests/download.jpeg');
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
@@ -126,7 +127,7 @@ img#logo {
 }
 .darkbox {
     height: 110%;
-    width: 110%;
+    width: 102%;
     position: absolute;
     top: 0;
     left: 0;
@@ -158,6 +159,10 @@ img#logo {
     transform: translate(0px, 4vh);
     z-index: 1;
     /* height: 70vh; */
+}
+.input:focus{
+    scale: 1.2;
+    transition: all ease-in 1s;
 }
 .trending-section {
     padding: 20px;
@@ -224,6 +229,133 @@ img#logo {
     scale: 1.1;
     transition: linear 1s;
   }
+  #reasons-to-join {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #reasons-to-join h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .reasons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .reason {
+    flex-basis: 22%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  .reason:hover{
+    scale: 1.2;
+    transition: scale 1s linear;
+  }
+  
+  .reason h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .reason p {
+    font-size: 1em;
+    color: #ccc;
+  }
+  .reasons-to-join{
+    background-color: black;
+  }
+  #faq {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  #faq h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #333;
+  }
+  
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .faq-answer p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #ccc;
+  }
+  
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  
+  .faq-item.active .faq-question {
+    background-color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-question {
+      font-size: 1.1em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-question {
+      font-size: 1em;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .reason {
+      flex-basis: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reason {
+      flex-basis: 100%;
+    }
+  }
+  
   @media (max-width: 768px) {
     .trending-item {
       min-width: 150px;
