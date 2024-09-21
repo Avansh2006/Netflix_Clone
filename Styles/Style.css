@@ -214,15 +214,15 @@ img#logo {
   .num{
     border-color: white;
     font-size: 92px;
-    transform: translate(0px,-169px);
+    transform: translate(-14px,-169px);
     z-index: 10;
    color: black;
    text-shadow: 
-   -3px -3px 0 #ffffff,  
-    3px -3px 0 #ffffff,
-   -3px  3px 0 #ffffff,
+   -2px -2px 0 #ffffffc7,  
+    2px -2px 0 #ffffffc7,
+   -2px  2px 0 #ffffffc7,
    
-    3px  3px 0 #ffffff;
+    2px  2px 0 #ffffffc7;
   }
   .btn-red:hover{
     background-color: #cc0812ce;
