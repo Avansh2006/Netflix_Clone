@@ -8,7 +8,7 @@ You can view the live version of the Netflix Clone [here](https://avansh2006.git
 ## Features
 - Fully responsive layout that adapts to different screen sizes
 - Trending section with a featured movie/TV show
-- Hover effects to make 
+- Hover effects
 
 ## Technologies Used
 - **HTML5**: Structure and content of the webpage
